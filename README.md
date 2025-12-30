@@ -1,5 +1,6 @@
+#experiment 1
+## TITLE : 1a.) DISPLAY PRIMITIVE DATA TYPES
 ```
-TITLE 1a) DISPLAY PRIMITIVE DATA TYPES
 class DefaultPrimitiveType {
     byte primbyte;
     short primshort;
