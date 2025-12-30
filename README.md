@@ -1,4 +1,4 @@
-<img width="548" height="248" alt="image" src="https://github.com/user-attachments/assets/14b3ec52-7b26-40e2-8254-cf76a2ec4833" />experiment 1
+
 TITLE 1a) DISPLAY PRIMITIVE DATA TYPES
 ```
 class DefaultPrimitiveType {
