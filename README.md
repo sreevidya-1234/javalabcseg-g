@@ -24,4 +24,4 @@ class DefaultPrimitiveType {
   }
 ```
 ### output:
-![output for DefaultPrimitiveType(
+![output for DefaultPrimitiveType(https://github.com/sreevidya-1234/javalabcseg-g/blob/5dbcb29d8e92f00f4541dc6cb8360635cc495c41/1a.output.png)
