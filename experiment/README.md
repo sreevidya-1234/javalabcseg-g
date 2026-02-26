@@ -60,3 +60,4 @@ class Quadratic {
 }
 ```
 ### output:
+![output for qudratic](https://github.com/sreevidya-1234/javalabcseg-g/blob/017adf91c7cddcfbe542a6a028ce0817c44f8446/1b%20java.png)
