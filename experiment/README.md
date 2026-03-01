@@ -86,6 +86,6 @@ class main{
   }
 ```
 ### output:
-![output for class mechanism]https://github.com/sreevidya-1234/javalabcseg-g/blob/d92678301d1d5028c3d49f336b916de29b26104c/2a%20output.png
+![output for class mechanism](https://github.com/sreevidya-1234/javalabcseg-g/blob/d92678301d1d5028c3d49f336b916de29b26104c/2a%20output.png)
 
 
