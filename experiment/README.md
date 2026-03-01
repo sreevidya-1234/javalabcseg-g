@@ -270,7 +270,7 @@ class Main {
 }
 ````
 ### output:
-![output binary search]
+![output binary search](https://github.com/sreevidya-1234/javalabcseg-g/blob/e40be02d7f4b2d6d0bc5466876d33a2f03b6740d/3b.png)
 ## 3c) booble sort
 ```
  class BubbleSort {
