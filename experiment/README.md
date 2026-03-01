@@ -137,6 +137,6 @@ class main{
 }
 ````
 ### output:
-1[output of implement constructor](https://github.com/sreevidya-1234/javalabcseg-g/blob/fbfb5b4470bf639d6fea881364c76819f8cd16de/2c%20output.png)
+![output of implement constructor](https://github.com/sreevidya-1234/javalabcseg-g/blob/fbfb5b4470bf639d6fea881364c76819f8cd16de/2c%20output.png)
 
 
