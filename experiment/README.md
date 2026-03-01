@@ -61,3 +61,30 @@ class Quadratic {
 ```
 ### output:
 ![output for qudratic](https://github.com/sreevidya-1234/javalabcseg-g/blob/017adf91c7cddcfbe542a6a028ce0817c44f8446/1b%20java.png)
+## TITLE : 2a.) implement class mechanisam 
+```
+class Rectangle{
+  double l;
+  double b;
+  double area(){
+    return l*b;
+  }
+  double perimeter(){
+   return 2*(l+b);
+   }
+ }
+class main{
+  public static void main(String args[]){
+    Rectangle rect =new Rectangle();
+    rect.l=6;
+    rect.b=12;
+    double area = rect.area();
+    double perimeter =rect.perimeter();
+    System.out.println("area is:" +area);
+    System.out.println("perimeter is:" +perimeter);
+    }
+  }
+```
+### output:
+
+
