@@ -207,6 +207,7 @@ class main{
 }
 ```
 ### output
+![output constructor overload]
 
 ## 3b) binary search
 ```
@@ -269,7 +270,7 @@ class Main {
 }
 ````
 ### output:
-
+![output binary search]
 ## 3c) booble sort
 ```
  class BubbleSort {
@@ -307,5 +308,5 @@ class Main {
 }
 ```
 ### output:
-
+![output bobble sort]
 
