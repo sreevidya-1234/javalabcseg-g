@@ -308,5 +308,5 @@ class Main {
 }
 ```
 ### output:
-![output bobble sort]
+![output bobble sort](https://github.com/sreevidya-1234/javalabcseg-g/blob/58b8776d7b5c7f61b846d0cad5d9f27a156616af/3c%20output.png)
 
