@@ -61,6 +61,7 @@ class Quadratic {
 ```
 ### output:
 ![output for qudratic](https://github.com/sreevidya-1234/javalabcseg-g/blob/017adf91c7cddcfbe542a6a028ce0817c44f8446/1b%20java.png)
+
 ## TITLE : 2a.) implement class mechanisam 
 ```
 class Rectangle{
@@ -87,5 +88,55 @@ class main{
 ```
 ### output:
 ![output for class mechanism](https://github.com/sreevidya-1234/javalabcseg-g/blob/d92678301d1d5028c3d49f336b916de29b26104c/2a%20output.png)
+## 2b) method overloading
+```
+class sum{
+  int sum(int a ,int b){
+    return a+b;
+  }
+  int sum(int a ,int b,int c){
+  return a+b+c;
+  }
+  double sum(double a ,double b){
+   return a+b;
+  }
+}
+class main{
+ public static void main(String args[]){
+   sum s= new sum();
+   System.out.println("sum of 2 integers:"+s.sum(20,16));
+   System.out.println("sum of 3 integers:"+s.sum(20,16,17));
+   System.out.println("sum of two real numbers:"+s.sum(30.465,15.675));
+  }
+}
+```
+### output:
+![output of method overloading](
+## 2c)implement constructor
+```
+class student{
+ String sname;
+ int sage;
+ double smarks;
+ student(String name,int age,double marks){
+   sname=name;
+   sage=age;
+   smarks=marks;
+  }
+ void display(){
+  System.out.println("student name is :"+sname);
+  System.out.println("student age is :"+sage);
+  System.out.println("stduent marks is:"+smarks);
+  }
+}
+class main{
+ public static void main(String args[]){
+  student std= new student("sree",12,960);
+  std.display();
+  }
+}
+````
+### output:
+1[output of implement constructor](
 
 
