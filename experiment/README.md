@@ -111,7 +111,7 @@ class main{
 }
 ```
 ### output:
-![output of method overloading](
+![output of method overloading](https://github.com/sreevidya-1234/javalabcseg-g/blob/26366c43418726ef303fdf592984db19f38a4030/2b%20output.png)
 ## 2c)implement constructor
 ```
 class student{
