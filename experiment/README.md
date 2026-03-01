@@ -138,5 +138,44 @@ class main{
 ````
 ### output:
 ![output of implement constructor](https://github.com/sreevidya-1234/javalabcseg-g/blob/fbfb5b4470bf639d6fea881364c76819f8cd16de/2c%20output.png)
+## add 2)
+```
+class Fibonacis {
+
+    int firstnumber;
+    int secondnumber;
+    int thirdnumber;
+    int sum;
+    int size_of_fibsequence;
+
+    Fibonacis(int size) {
+        firstnumber = 0;
+        secondnumber = 1;
+        thirdnumber = 0;
+        sum = 0;
+        size_of_fibsequence = size;
+    }
+
+    void generate_fibsequence() {
+
+        while (size_of_fibsequence > 0) {
+
+            if (size_of_fibsequence == 1)
+                System.out.print(firstnumber + " ");
+            else
+                System.out.print(firstnumber + " ");
+
+            sum += firstnumber;
+
+            thirdnumber = firstnumber + secondnumber;
+            firstnumber = secondnumber;
+            secondnumber = thirdnumber;
+
+            size_of_fibsequence--;
+        }
+    }
+```
+### output
+![output of fibonnoci series](
 
 
