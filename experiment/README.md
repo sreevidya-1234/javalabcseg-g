@@ -310,47 +310,49 @@ class Main {
 ### output:
 ![output bobble sort](https://github.com/sreevidya-1234/javalabcseg-g/blob/58b8776d7b5c7f61b846d0cad5d9f27a156616af/3c%20output.png)
 ## 4a) single inheritance
-```
-class Bicycle {
-    String pedalType;
+```class Person {
+    String name;
+    int age;
 
-    void showBicycleInfo() {
-        System.out.println("This is a bicycle with pedals");
-        System.out.println("Pedal Type: " + pedalType);
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void displayPersonDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
     }
 }
 
-class Motorbike extends Bicycle {
-    int engineCapacity;
+class Employee extends Person {
+    double annualSalary;
+    int yearOfJoining;
+    String nationalInsuranceNumber;
 
-    void showMotorbikeInfo() {
-        System.out.println("This motorbike has an engine");
-        System.out.println("Engine Capacity: " + engineCapacity + " cc");
+    Employee(String name, int age, double salary, int year, String nin) {
+        super(name, age);
+        annualSalary = salary;
+        yearOfJoining = year;
+        nationalInsuranceNumber = nin;
+    }
+
+    void displayEmployeeDetails() {
+        displayPersonDetails();
+        System.out.println("Annual Salary: " + annualSalary);
+        System.out.println("Year of Joining: " + yearOfJoining);
+        System.out.println("National Insurance Number: " + nationalInsuranceNumber);
     }
 }
 
-class ElectricBike extends Motorbike {
-    int batteryCapacity;
-
-    void showElectricBikeInfo() {
-        System.out.println("This electric bike has an electric motor & battery");
-        System.out.println("Battery Capacity: " + batteryCapacity + " Wh");
-    }
-}
-
-public class TestVehicle {
+public class TestEmployee {
     public static void main(String[] args) {
-        ElectricBike eBike = new ElectricBike();
-
-        eBike.pedalType = "Standard Pedals";
-        eBike.engineCapacity = 250;
-        eBike.batteryCapacity = 500;
-
-        eBike.showBicycleInfo();
-        eBike.showMotorbikeInfo();
-        eBike.showElectricBikeInfo();
+        Employee emp = new Employee("Yasmi", 19, 60000, 2022, "NJ123456A");
+        emp.displayEmployeeDetails();
     }
 }
+
+
 ```
 ### output
 ![output of single inheritance](https://github.com/sreevidya-1234/javalabcseg-g/blob/725eb5b5234de22aa5662e1e40f984b78d035673/4a%20output.png)
