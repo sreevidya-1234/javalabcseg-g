@@ -353,7 +353,7 @@ public class TestVehicle {
 }
 ```
 ### output
-![output of single inheritance](
+![output of single inheritance](https://github.com/sreevidya-1234/javalabcseg-g/blob/725eb5b5234de22aa5662e1e40f984b78d035673/4a%20output.png)
 ## 4b) multi level inheritance
 ```
 class Bicycle {
