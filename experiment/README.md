@@ -309,4 +309,354 @@ class Main {
 ```
 ### output:
 ![output bobble sort](https://github.com/sreevidya-1234/javalabcseg-g/blob/58b8776d7b5c7f61b846d0cad5d9f27a156616af/3c%20output.png)
+## 4a) single inheritance
+```
+class Bicycle {
+    String pedalType;
+
+    void showBicycleInfo() {
+        System.out.println("This is a bicycle with pedals");
+        System.out.println("Pedal Type: " + pedalType);
+    }
+}
+
+class Motorbike extends Bicycle {
+    int engineCapacity;
+
+    void showMotorbikeInfo() {
+        System.out.println("This motorbike has an engine");
+        System.out.println("Engine Capacity: " + engineCapacity + " cc");
+    }
+}
+
+class ElectricBike extends Motorbike {
+    int batteryCapacity;
+
+    void showElectricBikeInfo() {
+        System.out.println("This electric bike has an electric motor & battery");
+        System.out.println("Battery Capacity: " + batteryCapacity + " Wh");
+    }
+}
+
+public class TestVehicle {
+    public static void main(String[] args) {
+        ElectricBike eBike = new ElectricBike();
+
+        eBike.pedalType = "Standard Pedals";
+        eBike.engineCapacity = 250;
+        eBike.batteryCapacity = 500;
+
+        eBike.showBicycleInfo();
+        eBike.showMotorbikeInfo();
+        eBike.showElectricBikeInfo();
+    }
+}
+```
+### output
+![output of single inheritance](
+## 4b) multi level inheritance
+```
+class Bicycle {
+    String pedalType;
+
+    void showBicycleInfo() {
+        System.out.println("This is a bicycle with pedals");
+        System.out.println("Pedal Type: " + pedalType);
+    }
+}
+
+class Motorbike extends Bicycle {
+    int engineCapacity;
+
+    void showMotorbikeInfo() {
+        System.out.println("This motorbike has an engine");
+        System.out.println("Engine Capacity: " + engineCapacity + " cc");
+    }
+}
+
+class ElectricBike extends Motorbike {
+    int batteryCapacity;
+
+    void showElectricBikeInfo() {
+        System.out.println("This electric bike has an electric motor & battery");
+        System.out.println("Battery Capacity: " + batteryCapacity + " Wh");
+    }
+}
+
+public class TestVehicle {
+    public static void main(String[] args) {
+        ElectricBike eBike = new ElectricBike();
+
+        eBike.pedalType = "Standard Pedals";
+        eBike.engineCapacity = 250;
+        eBike.batteryCapacity = 500;
+
+        eBike.showBicycleInfo();
+        eBike.showMotorbikeInfo();
+        eBike.showElectricBikeInfo();
+    }
+}
+```
+### output
+![output of single inheritace](
+## 4c) abstrac class
+```
+abstract class Figure {
+    double dim1, dim2;
+
+    Figure(double d1, double d2) {
+        dim1 = d1;
+        dim2 = d2;
+    }
+
+    abstract double area();
+}
+
+class Rectangle extends Figure {
+    Rectangle(double length, double breadth) {
+        super(length, breadth);
+    }
+
+    double area() {
+        return dim1 * dim2;
+    }
+}
+
+class Triangle extends Figure {
+    Triangle(double base, double height) {
+        super(base, height);
+    }
+
+    double area() {
+        return 0.5 * dim1 * dim2;
+    }
+}
+
+public class TestFigure {
+    public static void main(String[] args) {
+        Figure f1 = new Rectangle(23.4, 14.5);
+        Figure f2 = new Triangle(12.3, 15.6);
+
+        System.out.println("Area of Rectangle = " + f1.area());
+        System.out.println("Area of Triangle = " + f2.area());
+    }
+}
+```
+### output
+![output of abstrac class](
+## 5a)interface
+```
+interface Sortable{
+  void sort(int [] arr);
+  }
+class Bubblesort implements Sortable{
+  public void sort(int [] arr){
+   int size =arr.length;
+   int temp=0;
+   for(int i=0;i<size-1;i++){
+    for(int j=0;j<size-i-1;j++){
+      if(arr[j]>arr[j+1]){
+         temp=arr[j];
+         arr[j]=arr[i];
+         arr[i]=temp;
+          }
+       }
+     }
+  }
+}
+class Selectionsort implements Sortable {
+   public void sort (int [] arr){
+    int size=arr.length;
+    int minindex=0;
+    int min;
+    for(int i=0;i<size;i++){
+      min =arr[i];
+     for(int j=i+1;j<size;j++){
+       if(min>arr[j]){
+          min=arr[j];
+          minindex=j;
+         }
+       }
+     arr[i]=min;
+    }
+   }
+ }
+class Testsort {
+    static void display(int arr[]) {
+        for (int ele : arr) {
+            System.out.print(ele + ", ");
+        }
+        System.out.println();
+    }
+    public static void main(String args[]) {
+        int arr1[] = {9, 7, 4, 3, 6, 8};
+        int arr2[] = {8, 6, 3, 4, 7, 9};
+        Sortable s;
+        s = new Bubblesort();
+        s.sort(arr1);
+        System.out.println("After Bubble Sort:");
+        display(arr1);
+
+        s = new Selectionsort();
+        s.sort(arr2);
+        System.out.println("After Selection Sort:");
+        display(arr2);
+    }
+}
+```
+### output
+![output of inheritance](
+## 5b) polymorphism
+```
+class Vehicle{
+    void run(){
+          System.out.println(" vechicle is running:");
+     }
+  }
+class car extends Vehicle{
+    void run(){
+           System.out.println("car is running :");
+      }
+  }
+class bike extends Vehicle{
+     void run(){
+       System.out.println("bike is running:");
+    }
+  }
+class TestVehicle{
+   public static void main(String args[]){
+     Vehicle v ;
+     v=new car();
+     v.run();
+     v=new bike();
+     v.run();
+     v=new Vehicle();
+     v.run();
+    }
+}
+```
+### output
+![output of polymorphism](
+## 5c) stingbuffer
+```
+class Deletechar{
+  public static void main(String args[]){
+    StringBuffer sb =new StringBuffer("java programming");
+    System.out.println(sb);
+    sb.deleteCharAt(4);
+    System.out.println(sb);
+    sb.delete(0,4);
+    System.out.println(sb);
+
+   }
+}
+```
+### output
+![output of stringbuffer](
+### 6a) excaption handling
+```
+import java.util.Scanner;
+
+class ArrayIndexExceptionDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        try {
+            System.out.print("Enter index to access: ");
+            int index = sc.nextInt();
+            System.out.println("Element at index " + index + " is " + arr[index]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index out of bounds!");
+        }
+
+        sc.close();
+    }
+}
+```
+### output
+![output of exception handling])
+## 6b) muitiple catch clause
+```
+import java.util.Scanner;
+
+class MultipleCatchDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {10, 20, 30, 40, 50};
+
+        try {
+            System.out.print("Enter first number: ");
+            int a = sc.nextInt();
+
+            System.out.print("Enter second number: ");
+            int b = sc.nextInt();
+
+            int result = a / b;
+            System.out.println("Result = " + result);
+
+            System.out.print("Enter index to access array: ");
+            int index = sc.nextInt();
+            System.out.println("Element = " + arr[index]);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception occurred");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception occurred");
+        }
+        catch (Exception e) {
+            System.out.println("Some other exception occurred");
+        }
+
+        sc.close();
+        System.out.println("Program continues...");
+    }
+```
+### output 
+![output of mutiple clauses](
+## 6c) java built-in 
+```
+import java.util.Scanner;
+
+class BuiltInException {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        try {
+            System.out.print("Enter a number to divide 100: ");
+            int n = sc.nextInt();
+
+            int result = 100 / n;
+            System.out.println("Result = " + result);
+
+            int[] arr = new int[3];
+            System.out.println(arr[5]);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception occurred");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception occurred");
+        }
+        catch (Exception e) {
+            System.out.println("General Exception o…
+```
+### output
+![output of builtin](
+
+
+
+
+
+
 
