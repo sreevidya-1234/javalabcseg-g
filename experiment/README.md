@@ -623,7 +623,7 @@ class MultipleCatchDemo {
     }
 ```
 ### output 
-![output of mutiple clauses](
+![output of mutiple clauses](https://github.com/sreevidya-1234/javalabcseg-g/blob/c77aeec0776a518f2e95ebda1a7a5d256708237a/6b%20output.png)
 ## 6c) java built-in 
 ```
 import java.util.Scanner;
