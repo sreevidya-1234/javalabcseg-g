@@ -398,7 +398,7 @@ public class TestVehicle {
 }
 ```
 ### output
-![output of single inheritace](
+![output of single inheritace](https://github.com/sreevidya-1234/javalabcseg-g/blob/d5bfd604f362197eea2b7bf6897cbb5d98abef60/4b%20output.png)
 ## 4c) abstrac class
 ```
 abstract class Figure {
