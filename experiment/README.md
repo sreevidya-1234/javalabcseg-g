@@ -347,7 +347,7 @@ class Employee extends Person {
 
 public class TestEmployee {
     public static void main(String[] args) {
-        Employee emp = new Employee("Yasmi", 19, 60000, 2022, "NJ123456A");
+        Employee emp = new Employee("sree", 19, 60000, 2022, "NJ123456A");
         emp.displayEmployeeDetails();
     }
 }
