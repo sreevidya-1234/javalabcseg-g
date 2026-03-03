@@ -443,7 +443,7 @@ public class TestFigure {
 }
 ```
 ### output
-![output of abstrac class](
+![output of abstrac class](https://github.com/sreevidya-1234/javalabcseg-g/blob/af6452ea408ace46ad5e4e0352756696bb1ce5cb/4c%20output.png)
 ## 5a)interface
 ```
 interface Sortable{
