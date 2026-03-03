@@ -552,7 +552,7 @@ class Deletechar{
 }
 ```
 ### output
-![output of stringbuffer](
+![output of stringbuffer](https://github.com/sreevidya-1234/javalabcseg-g/blob/8b0613a1315d1a6078985baa27293307d42b286e/5c%20output.png)
 ### 6a) excaption handling
 ```
 import java.util.Scanner;
