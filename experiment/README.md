@@ -652,7 +652,7 @@ class BuiltInException {
             System.out.println("General Exception o…
 ```
 ### output
-![output of builtin](
+![output of builtin](https://github.com/sreevidya-1234/javalabcseg-g/blob/c4797b03dab7a4366e81cafebc1b4b47f783e0a7/6c%20output.png)
 
 
 
