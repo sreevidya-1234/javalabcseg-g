@@ -775,7 +775,7 @@ class Main {
 }
 ```
 ### output:
-![output of perfect number](
+![output of perfect number](https://github.com/sreevidya-1234/javalabcseg-g/blob/715e1edb30c7374b30196569d4269005335c6855/add4%20output.png)
 
 
 
