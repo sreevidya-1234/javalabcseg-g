@@ -742,7 +742,7 @@ class Main {
 }
 ```
 ### output:
-1[output of polindrome](
+![output of polindrome](https://github.com/sreevidya-1234/javalabcseg-g/blob/77abdd7d75322f0010a90a1bfd573beb02802644/add3%20output.png)
 ## add 4) perfect number
 ```
 import java.util.Scanner;
