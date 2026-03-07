@@ -866,7 +866,7 @@ class TestThreads {
     }
 }
 ```
-![output of creats threads](
+![output of creats threads](https://github.com/sreevidya-1234/javalabcseg-g/blob/af1513ce30f5816bd4e4a4e2167f3debf52ba611/7b%20output.png)
 ## 7c) illustration is alive
 ```
 class LongRunningTask extends Thread {
