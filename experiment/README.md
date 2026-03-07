@@ -705,7 +705,7 @@ class InsertSubstring {
 }
 ```
 ### output:
-![output of substring into main string](
+![output of substring into main string](https://github.com/sreevidya-1234/javalabcseg-g/blob/4de9de1a901d21aa01777256fea141c41b10f566/add1%20output.png)
 ## add 3) polindrome
 ```
 import java.util.Scanner;
