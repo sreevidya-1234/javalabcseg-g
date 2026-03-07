@@ -908,7 +908,7 @@ public class ThreadDemo {
 }
 ```
 ### output
-![output is illustration alive](
+![output is illustration alive](https://github.com/sreevidya-1234/javalabcseg-g/blob/37fee1c80d492d64ebca7653182ea10c8697431b/7c%20output.png)
 
 
 
