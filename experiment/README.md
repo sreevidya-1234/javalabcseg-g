@@ -909,6 +909,143 @@ public class ThreadDemo {
 ```
 ### output
 ![output is illustration alive](https://github.com/sreevidya-1234/javalabcseg-g/blob/37fee1c80d492d64ebca7653182ea10c8697431b/7c%20output.png)
+## 8a) deamon threads 
+```
+class DaemonThread extends Thread {
+    public void run() {
+        while (true) {
+            System.out.println("Daemon Thread is running...");
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println("Exception occurred");
+            }
+        }
+    }
+}
+
+class UserThread extends Thread {
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println("User Thread iteration: " + i);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                System.out.println("Exception occurred");
+            }
+        }
+    }
+}
+
+public class TestDaemon {
+    public static void main(String[] args) {
+        UserThread userThread = new UserThread();
+        DaemonThread daemonThread = new DaemonThread();
+
+        daemonThread.setDaemon(true);   // Setting daemon thread
+
+        userThread.start();
+        daemonThread.start();
+    }
+}
+```
+### output:
+![output of deamon thread]
+## 8b) producer consumer problem
+```
+class SharedBuffer {
+
+    private int[] buffer;
+    private int count = 0;
+    private int in = 0;
+    private int out = 0;
+
+    SharedBuffer(int size) {
+        buffer = new int[size];
+    }
+
+    synchronized void produce(int item) {
+        while (count == buffer.length) {
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+
+        buffer[in] = item;
+        in = (in + 1) % buffer.length;
+        count++;
+
+        notify();
+    }
+
+    synchronized int consume() throws InterruptedException {
+        while (count == 0) {
+            wait();
+        }
+
+        int item = buffer[out];
+        out = (out + 1) % buffer.length;
+        count--;
+
+        notify();
+        return item;
+    }
+}
+
+class Producer extends Thread {
+
+    private SharedBuffer buffer;
+
+    Producer(SharedBuffer buffer) {
+        this.buffer = buffer;
+    }
+
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            buffer.produce(i);
+            System.out.println("Produced: " + i);
+        }
+    }
+}
+
+class Consumer extends Thread {
+
+    private SharedBuffer buffer;
+
+    Consumer(SharedBuffer buffer) {
+        this.buffer = buffer;
+    }
+
+    public void run() {
+        try {
+            for (int i = 1; i <= 10; i++) {
+                int item = buffer.consume();
+                System.out.println("Consumed item: " + item);
+            }
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}
+
+public class ProducerConsumerDemo {
+
+    public static void main(String[] args) {
+
+        SharedBuffer buffer = new SharedBuffer(5);
+
+        Producer p = new Producer(buffer);
+        Consumer c = new Consumer(buffer);
+
+        p.start();
+        c.start();
+    }
+}
+```
+### output:
+1[output of producer consumer problem]
 
 
 
