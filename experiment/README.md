@@ -672,7 +672,14 @@ class BuiltInException {
             System.out.println("Array Index Out Of Bounds Exception occurred");
         }
         catch (Exception e) {
-            System.out.println("General Exception o…
+            System.out.println("General Exception occured");
+        }
+        finally{
+                    sc.close();
+                    System.out.println("program ended");
+            }
+        }
+}
 ```
 ### output
 ![output of builtin](https://github.com/sreevidya-1234/javalabcseg-g/blob/c4797b03dab7a4366e81cafebc1b4b47f783e0a7/6c%20output.png)
